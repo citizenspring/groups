@@ -1,0 +1,90 @@
+{
+  "headers": {
+    "Mime-Version": "1.0",
+    "X-Google-Smtp-Source": [
+      "AA0mqf5NHRctcinL8PmcoeAhxWWPjdxK1x1Ge1ccW4pOb8ncm2XvAPMFToTayvBRlT9d3P01t58yPS7EJrGpEudMCRg="
+    ],
+    "X-Forwarding-Service": "ImprovMX v3.0.0",
+    "Received": [
+      "from mail-wr1-x433.google.com (mail-wr1-x433.google.com. [2a00:1450:4864:20::433]) by mx1.improvmx.com with ESMTP (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256) for <unsubscribe!newsletter@citizencorner.brussels>; Wed, 14 Dec 2022 11:48:43 -0000",
+      "by mail-wr1-x433.google.com with SMTP id h16so10046533wrz.12 for <unsubscribe!newsletter@citizencorner.brussels>; Wed, 14 Dec 2022 03:48:43 -0800 (PST)"
+    ],
+    "Feedback-Id": "Y2l0aXplbmNvcm5lci5icnVzc2Vscw==:send:ImprovMX",
+    "Received-SPF": [
+      "pass (improvmx.com: domain of gmail.com designates 2a00:1450:4864:20::433 as permitted sender) receiver=mx1.improvmx.com; client-ip=2a00:1450:4864:20::433; helo=mail-wr1-x433.google.com;"
+    ],
+    "Authentication-Results": [
+      "mx1.improvmx.com; spf=pass (improvmx.com: domain of gmail.com designates 2a00:1450:4864:20::433 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass (signature was verified) header.i=@gmail.com header.s=20210112 header.b=hTlJsBg2"
+    ],
+    "X-Gm-Message-State": [
+      "ANoB5pndKwPZ7yf6bYIs/cg+pD+Inut4wNXtqGitlebfGDpZxyTClkDk\tC7z2ZinaLA84fDjjOvsmecrXEh9JDu95mrnAzheECe1r"
+    ],
+    "Reply-To": [
+      {
+        "name": null,
+        "email": "xavier@gmail.com"
+      }
+    ],
+    "ARC-Message-Signature": [
+      "i=1; a=rsa-sha256; c=relaxed/relaxed; d=improvmx.com; s=arc-20200618; t=1671018524; h=message-id : in-reply-to : mime-version : reply-to : from : date : subject : to : cc : content-type : from; bh=U4Q5+XSTpOiGoxnqoEvmBPO6cCne234UaZuYahsHeFc=; b=CE3I3nxoBVMKamGnzTlSBsdaoBMGA3ksBqurvluHYmnyki5eJ5FgSKUcWnJjDo9hrUiKj FFuQxwr/8FIVmlfhFRm/xZB8rQiezZdxRGl8azcBWUg9wMNyv2i2rpEcfdmg8MrtB6SPw6s yimfkUPEzcgmD7mnzjk+hhvoHd9AtOU55XlJBkbIYUw3xftTDhrqf6tn6XtwaLzoQbMVgdW QLULaWdul2uSEzAkxnfX9hV0k6+11+CVtodr4qqb8qE+sjtGHyHvLoDUSuVEtDbx4Hk1//z VoJVvpDwLHC7EUKuVTWOlwyihNxe6JD12k+bxP+CKYhDndY9QWEKUnTj4KEQ=="
+    ],
+    "DKIM-Signature": [
+      "v=1; a=rsa-sha256; c=relaxed/relaxed; d=improvmx.com; i=@improvmx.com; q=dns/txt; s=dkimprovmx1; t=1671018524; h=date : from : to : subject : content-type : feedback-id : message-id; bh=U4Q5+XSTpOiGoxnqoEvmBPO6cCne234UaZuYahsHeFc=; b=T6EyD8BK8wawPVbSMxpy5dE4YgdQdIGSiJ25882vE0wey/0Dr1BCS06QueTnLrBprtVoO GVDIVYPbBxguhflyNhRA1NhZyQWtkwmWoyP8aSJy7OfKM/IFh1s3m8Qtr8qogEH3avA+wFV EolVDNH6uyDl9PRGg1j6LULeP9IjLmjIOWmmIFs9Gi6l5T3ydH9DCrWJrLDjDsnCjGpBS96 xgYstyCb4VK1WecRxjDxKyHK0/pUKropqpOU5GqHSJIZwZYOhUpr5XpaHKGxRm52aWB3Jb5 ixzU5jNOtqjeEPERYhBtR+ZKEx02h2SAYHC6x2Om9cV2dzVdmp3KnSIf/PmQ=="
+    ],
+    "X-Received": [
+      "by 2002:a05:6000:11c9:b0:242:3699:ba4e with SMTP id i9-20020a05600011c900b002423699ba4emr19982373wrx.464.1671018521328; Wed, 14 Dec 2022 03:48:41 -0800 (PST)"
+    ],
+    "In-Reply-To": [
+      "<CAFPTvg_dy-QvL8JDLWGg0KaS3VbcBZJd0B9mivQfA2mUSaBXqw@mail.gmail.com>"
+    ],
+    "Delivered-To": {
+      "name": null,
+      "email": "unsubscribe!newsletter@citizencorner.brussels"
+    },
+    "X-Original-Message-Id": [
+      "<CAFPTvg_dy-QvL8JDLWGg0KaS3VbcBZJd0B9mivQfA2mUSaBXqw@mail.gmail.com>"
+    ],
+    "X-Improvmx-Session-Id": [
+      "912a357d-3863-4b2e-b2b4-b361ea562b99"
+    ],
+    "ARC-Seal": [
+      "i=1; cv=none; a=rsa-sha256; d=improvmx.com; s=arc-20200618; t=1671018524; b=K7BbZ/d362bDemZvDcR88s33O/YvCPkMegwNTi2HZ/iRa4ZnNylfw4H2kR9lYIACMBT+Y yIhqnX62APRwHb/j2zTKIpjCepocHmbAGUAmssY/V5VZpgMGajokpNAxCk3uct0eukiH+cX qDRbr8sngN7MMU8FeU/E2Hbh5SoRDTRQDfN7d6LYM2MP0kRV87IlQyuQeUFIb9eRqWfiOo1 jHMliwuAFv+0QXL7l8Zi/uWxB9LWVud9kUocUEJsSHA37rIjHVWRYBy1TVuppfBMpgT9u7A UgaflJsc/bEYHvk2PBeM6wNVGe1u5Zd1HAr+Nmuc6vLDGfth6YSOa1YM/BdQ=="
+    ],
+    "ARC-Authentication-Results": [
+      "i=1; mx1.improvmx.com; spf=pass (improvmx.com: domain of gmail.com designates 2a00:1450:4864:20::433 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass (signature was verified) header.i=@gmail.com header.s=20210112 header.b=hTlJsBg2"
+    ]
+  },
+  "subject": "Unsubscribe to newsletter",
+  "return-path": {
+    "name": null,
+    "email": "xavier@gmail.com"
+  },
+  "cc": [
+    {
+      "name": null,
+      "email": "xavier@regensunite.earth"
+    }
+  ],
+  "to": [
+    {
+      "name": null,
+      "email": "unsubscribe!newsletter@citizencorner.brussels"
+    }
+  ],
+  "message-id": "<167101852463.21428.11809960914530235906@improvmx.com>",
+  "from": {
+    "name": "Xavier Damman",
+    "email": "xavier@gmail.com"
+  },
+  "date": "Wed, 14 Dec 2022 12:48:25 +0100",
+  "timestamp": 1671018505,
+  "text": "Please unsubscribe me\r\n\r\n-- Xavier\r\nSignature",
+  "html": "<div dir=\"ltr\"><div>Please unsubscribe me</div></div>",
+  "inlines": [],
+  "envelope": {
+    "return_path": null,
+    "recipient": "unsubscribe!newsletter@citizencorner.brussels",
+    "hostname": "mail-wr1-x433.google.com",
+    "remote_ip": "2a00:1450:4864:20::433"
+  }
+}

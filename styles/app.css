@@ -1,0 +1,135 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5;
+  color: #111;
+  font-size: 11pt;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#outline .active {
+  color: red;
+}
+
+span {
+  font-size: 11pt;
+}
+
+h1 {
+  @apply text-4xl font-extrabold dark:text-white my-4;
+}
+
+.GoogleDoc a,
+.GoogleDoc span a {
+  text-decoration: none;
+  @apply no-underline text-green-700;
+}
+
+.GoogleDoc .button {
+  cursor: pointer;
+  @apply mt-4;
+}
+
+.GoogleDoc .button.primary {
+  @apply text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
+}
+
+.GoogleDoc .button.secondary {
+  @apply text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800;
+}
+
+.GoogleDoc .button.large {
+  @apply w-full sm:w-auto px-4 sm:px-5 py-2 sm:py-3 mb-0;
+}
+
+.GoogleDoc a:hover {
+  @apply text-green-900;
+}
+
+.GoogleDoc a:visited {
+  @apply text-green-600;
+}
+
+.GoogleDoc h1 {
+  @apply text-3xl mt-8 mb-4;
+}
+
+.GoogleDoc h2,
+.GoogleDoc h2 span,
+.GoogleDoc h3,
+.GoogleDoc h3 span {
+  @apply font-normal mt-8 mb-2 text-2xl;
+}
+
+.GoogleDoc h3 {
+  color: #333;
+  @apply text-xl;
+}
+
+.GoogleDoc h4 {
+  @apply mt-6 mb-2;
+}
+
+.GoogleDoc h5 {
+  @apply mt-4 mb-1;
+}
+
+hr {
+  border: none;
+  background-color: #eaeaea;
+  height: 1px;
+  width: 100%;
+  margin: 3rem 0 2rem 0;
+}
+
+div.pagebreak {
+  border-top: 1px solid;
+  @apply border-green-300 my-12 w-full;
+  height: 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.GoogleDoc ul {
+  @apply my-2;
+}
+
+.GoogleDoc ul li {
+  @apply list-disc ml-8 mt-1;
+}
+
+.GoogleDoc ol {
+  @apply px-8 my-2;
+  list-style: auto;
+}
+
+.GoogleDoc .imageWrapper.fullWidth {
+  @apply my-2 -mx-4;
+}
+
+.GoogleDoc .video {
+  @apply my-2 -mx-4;
+}
+
+.GoogleDoc img {
+  @apply my-2 -mx-4;
+  display: inline-block;
+}
+
+.GoogleDoc td {
+  @apply p-1;
+}

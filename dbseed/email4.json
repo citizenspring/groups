@@ -1,0 +1,81 @@
+{
+  "headers": {
+    "Feedback-Id": "Y2l0aXplbmNvcm5lci5icnVzc2Vscw==:send:ImprovMX",
+    "X-Received": [
+      "by 2002:a81:6655:0:b0:52e:e752:4a5b with SMTP id a82-20020a816655000000b0052ee7524a5bmr1046358ywc.192.1676298790759; Mon, 13 Feb 2023 06:33:10 -0800 (PST)"
+    ],
+    "Mime-Version": "1.0",
+    "Reply-To": [
+      {
+        "name": null,
+        "email": "xavier@gmail.com"
+      }
+    ],
+    "X-Improvmx-Session-Id": [
+      "4bda0990-f8f7-4796-a9f9-2de54ffe8a3d"
+    ],
+    "ARC-Seal": [
+      "i=1; cv=none; a=rsa-sha256; d=improvmx.com; s=arc-20200618; t=1676298795; b=gAVVrTTJCmGPTp1SzMvU1+vtsXyXaLsv5Bf4xDgDPaCaUsxYSI/GitqMYxkm+npAo3OFM ZCdh1KYyyDoIVymLVhyBIXAvHivyz92U8yQMOYhOWBIsYB5WLe8xpfW13ZDbPSGVB3XoPF9 ngpV7YA5EcX1QMs5fO9EFdMhPxsbQjD7ulGiaBEl/E9pPOm+wAlwUA1kBV/6taGssjFFk/r +38quyGZrofuag5HVK67ODo3QrvV7RXM42L2lqRfVUm7NJ+eIwVxez4xsqCe6v3hhS9QWBA fAGBNvi9E2BZHJqL5zPrLs2aREoAKCsSlSQCf/71vEFQ5o3iE73aDrq2EjPw=="
+    ],
+    "DKIM-Signature": [
+      "v=1; a=rsa-sha256; c=relaxed/relaxed; d=improvmx.com; i=@improvmx.com; q=dns/txt; s=dkimprovmx1; t=1676298795; h=date : from : to : subject : content-type : feedback-id : message-id; bh=C++rPusHjMemzYH8HbNSSzol/Cfxfpvxb4z1ch6wu1k=; b=EJHghdT7Cs1gThFcrbmKT5ut+smExbGSkTZoDAIDwKKRcxuc3rbOQwiGSuTBp8KWi/PCK eqP2tIYXUmRZc0yTOELw4U0nZkYWvO0bcPRTCAcUkV2FriSh4Cfxj49aFJugvxdrcIY084H OfOHvtNsraIuD3py2vriJo4GeNACu0W2iDcOmYcZfPXAHFnbjWo+H6KH+MWm5DHgA0t8mzb nxCUJozbMOS+hoW+xCgtWJ0tggp3BBlO6Xpg+D8pmP5WRevMC5Nudp0O1YsplJieCXOlotj z+aX/Ae1tCtz5AgOYjvjfQGPtdfJ2iKDBaWGFMCzxA6q4s+sU2Xfk6Y0Tz/g==",
+      "v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20210112; h=to:subject:message-id:date:from:reply-to:mime-version:from:to:cc :subject:date:message-id:reply-to; bh=C++rPusHjMemzYH8HbNSSzol/Cfxfpvxb4z1ch6wu1k=; b=bDI0XUvBaf7YBk0hgCYOvrpcdXJ/A0OZTbPfY2HaQLC/Na+MtJH2iVNyQTfEHcE10n 5E/as/R9ZuTKhRndkAOUt3UAwKI343QIPPkeKxFLWRyJt8pjHvEqL2urS7vlxME7AT7C qZKfpSoZBRhbnOvoWnCLv1F3OOxEVAVPXlkHtRWaxcdBr5Db7fiNaHfhDDG9bwkJ6HiL CRgViqvbNFIsNsgOo2kCbVshoBYsLb6KJh+pI8rOwCmiggXy3CJSdmUtKZwKBUVle73x 34S+GdLjS3mkBuRe1BgFJZFR86ZYf0UVb90z+IC4skVzaNCgCjuu1ulA2RtEk0UdIkJ5 83DQ=="
+    ],
+    "X-Forwarding-Service": "ImprovMX v3.0.0",
+    "X-Gm-Message-State": [
+      "AO0yUKXYAUw396bOKFg5BjUP11EGWeWUQfp3cM+Ex2jBKGTVtXOfjIdq\tK0bMyuEzJKztu8vKtZxqcu3zs80B0k0IfUFxZUKektm+Je8="
+    ],
+    "Delivered-To": {
+      "name": null,
+      "email": "requests@citizencorner.brussels"
+    },
+    "Received-SPF": [
+      "pass (improvmx.com: domain of gmail.com designates 2607:f8b0:4864:20::112e as permitted sender) receiver=mx1.improvmx.com; client-ip=2607:f8b0:4864:20::112e; helo=mail-yw1-x112e.google.com;"
+    ],
+    "Received": [
+      "from mail-yw1-x112e.google.com (mail-yw1-x112e.google.com. [2607:f8b0:4864:20::112e]) by mx1.improvmx.com with ESMTP (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256) for <requests@citizencorner.brussels>; Mon, 13 Feb 2023 14:33:14 -0000",
+      "by mail-yw1-x112e.google.com with SMTP id 00721157ae682-52ebee9a848so149525547b3.3 for <requests@citizencorner.brussels>; Mon, 13 Feb 2023 06:33:13 -0800 (PST)"
+    ],
+    "ARC-Message-Signature": [
+      "i=1; a=rsa-sha256; c=relaxed/relaxed; d=improvmx.com; s=arc-20200618; t=1676298795; h=mime-version : reply-to : from : date : message-id : subject : to : content-type : from; bh=C++rPusHjMemzYH8HbNSSzol/Cfxfpvxb4z1ch6wu1k=; b=F/3G600NOHn3QoE+6RPhZPUSw6cGaHKL58LGP3DD6zCo1JjsRMK37pxfac17H75VTWHPv +Q3Va/DScGHR0aW7nLj43W8bSHzNOdEjwLs/8JEQ9Tq4Gq63haqI5QnRVsXKJEdVFnAcIle Bt5I3ZPpmz9Keq/fmatkb/rRhUJn+qh+JR1nmnxW4k4+GG+64FYdoPXZTGteWVcCgedYfn5 Jt0TgM3ND/bP/4jnyTToBNDKX+3WBNpAeuw6dtEf8cO0RXmgD13MbNheYumxgkomKNd/FwK ydSbjuLnFl/xICpK/henEjc3k32+a4EyPyaFG0ob0x4zzb+LwVz0+147Gs9w=="
+    ],
+    "Authentication-Results": [
+      "mx1.improvmx.com; spf=pass (improvmx.com: domain of gmail.com designates 2607:f8b0:4864:20::112e as permitted sender) smtp.mailfrom=gmail.com; dkim=pass (signature was verified) header.i=@gmail.com header.s=20210112 header.b=bDI0XUvB"
+    ],
+    "ARC-Authentication-Results": [
+      "i=1; mx1.improvmx.com; spf=pass (improvmx.com: domain of gmail.com designates 2607:f8b0:4864:20::112e as permitted sender) smtp.mailfrom=gmail.com; dkim=pass (signature was verified) header.i=@gmail.com header.s=20210112 header.b=bDI0XUvB"
+    ],
+    "X-Google-Smtp-Source": [
+      "AK7set9gKH/xq7Vd/1bwaI7AKyCbQCD+5wwX5lM12uy4BZGbl4gKzVDfXBTpltqmeRDhedcZIoGMXAzFcZPjHnfTYas="
+    ],
+    "X-Google-DKIM-Signature": [
+      "v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20210112; h=to:subject:message-id:date:from:reply-to:mime-version :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to; bh=C++rPusHjMemzYH8HbNSSzol/Cfxfpvxb4z1ch6wu1k=; b=OtOSYFcrcdvp90RzA6RAQvVheOP4COQkuVWkxmjUtzjNIKlWMkSeKHETwVY6+QByoh fz8lrBvk9eV1X1RRcqiN1MO9Qg/2+paUdYFLIoggmICu+lRsZEu/wPOaOJ5Nwf/ftnl+ k1Fm8VtBJVr6W1ie7fII+GYW3o8ho7E3FwUCJHzk6d0hJF04fY1JgRuhUJHclD1Q8AFd UEqngk1s+VlSn0jiMP1rCkjSyYJWFf0tEKAjRD6wYArz/+TPjnakRql048kuiGqJID+s rs/2loE+NfWsyn6CouCn1VPQ50GWXJ6AeQd+ZzWfRZGUR5vZyBPvInDWJuNPKlrqfIsg 2i5w=="
+    ]
+  },
+  "date": "Mon, 13 Feb 2023 15:32:54 +0100",
+  "subject": "Birthday party 12/3",
+  "message-id": "<CAFPTvg9OGk+-cmrxyGH+78VcKzzq3bXeyc_MFvKSbxkTaUzFvg@mail.gmail.com>",
+  "return-path": {
+    "name": null,
+    "email": "xavier@gmail.com"
+  },
+  "to": [
+    {
+      "name": null,
+      "email": "requests@citizencorner.brussels"
+    }
+  ],
+  "from": {
+    "name": "Xavier Damman",
+    "email": "xavier@gmail.com"
+  },
+  "timestamp": 1676298774,
+  "text": "Hello there!\r\n\r\nPossible to organise a birthday party?\r\n\r\n- Xavier\r\n0470 30 90 00",
+  "html": "<div dir=\"ltr\">Hello there!<div><br></div><div>Possible to organise a birthday party?</div><div><br></div><div>- Xavier</div><div>0470 30 90 00<br></div></div>",
+  "envelope": {
+    "return_path": "xavier@gmail.com",
+    "recipient": "requests@citizencorner.brussels",
+    "hostname": "mail-yw1-x112e.google.com",
+    "remote_ip": "2607:f8b0:4864:20::112e"
+  }
+}

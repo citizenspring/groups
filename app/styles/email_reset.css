@@ -1,0 +1,199 @@
+/* ------------------------------------------------------------
+* THE BASICS - Resolve some troublesome quirks from the get-go
+* ------------------------------------------------------------ */
+/* Force Outlook to display view in browser link. */
+#outlook a {
+  padding: 0;
+}
+
+/* Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  min-width: 100%;
+}
+
+/* Stop Wekbit and Windows Phone changing the font size */
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0 !important;
+  padding: 0;
+}
+
+/* Force hotmail/outlook.com to display at full width (outer div) */
+.ReadMsgBody {
+  width: 100%;
+}
+
+/* Force hotmail/outlook.com to display at full width (inner div) */
+.ExternalClass {
+  width: 100%;
+}
+
+/* Fix the line-height bug in hotmail/outlook.com */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+/* In case the body tag is removed (Gmail etc..)*/
+#wrappertable {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  line-height: 100% !important;
+}
+
+/* Stops email clients resizing small text. */
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Centers email on Android 4.4. */
+div[style*="margin: 16px 0"] {
+  margin: 0 !important;
+  font-size: 100% !important;
+}
+
+/* Stops Outlook 2007+ and Gmail from adding extra spacing to tables. */
+table,
+td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
+}
+
+/* Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  margin: 0 auto !important;
+}
+table table table {
+  table-layout: auto;
+}
+
+/* Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+  border-bottom: none !important;
+}
+
+/* ------------------------------------------------------------
+* ANCHOR STYLING - Styling for hyperlinks
+* (Move these inline for best compatibility)
+* ------------------------------------------------------------ */
+a,
+a:link {
+  color: #e6057f;
+  text-decoration: underline;
+}
+
+/* Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+  color: inherit !important;
+}
+
+/* APPLE LINKS - Prevent the color of certain text content
+  * i.e. dates/times being changed on iOS
+  * You can add more appleLinks classes for any additional color(s)
+  * you require to fix */
+.appleLinksWhite a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.appleLinksBlack a {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+/* Optional hyperlink states (Not supported in all email clients)
+a:visited { color: #3c96e2; text-decoration: none; }
+a:focus { color: #3c96e2; text-decoration: underline; }
+a:hover { color: #3c96e2; text-decoration: underline; }
+*/
+
+/* ------------------------------------------------------------
+* IMAGE FIXES - Sensible image fixes
+* (Move these inline, for best compatibility)
+* ------------------------------------------------------------ */
+img {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  /* Uses a better rendering method when resizing images in IE. */
+  -ms-interpolation-mode: bicubic;
+}
+
+.img-fix {
+  display: block;
+}
+
+/* ------------------------------------------------------------
+* YAHOO! Mail - Paragraph fix
+* ------------------------------------------------------------ */
+p {
+  margin: 1em 0;
+}
+
+/* ------------------------------------------------------------
+* YAHOO! SHORTCUTS - Certain keywords being hyperlinked
+* ------------------------------------------------------------ */
+span.yshortcuts,
+a span.yshortcuts {
+  color: #000000;
+  background-color: none;
+  border: none;
+}
+span.yshortcuts:hover,
+span.yshortcuts:active,
+span.yshortcuts:focus {
+  color: #000000;
+  background-color: transparent;
+  border: none;
+}
+
+/* ------------------------------------------------------------
+* HOTMAIL/OUTLOOK.COM - Header tags styling color overrides
+* ------------------------------------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black !important;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: blue !important;
+}
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: red !important;
+}
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: purple !important;
+}
